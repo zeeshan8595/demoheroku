@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+        <script type="text/javascript" src="{{url_for('static',filename='script/script.js')}}">
+
+        </script>
+
+
+    </head>
+
+    <body>
+        <h1><b>!!! WEL COME !!!</b></h1>
+        
+
+        <img src="static\results.jpg" alt="Bikes" width="200" height="100">
+
+
+        <h3><b>Please Enter The Marks For The Subject</b></h3>
+    
+            <form action ="/submit" method="post"> 
+      
+                <label for="Physics"><b>Physics:</label><br>
+                <input type="text"id='physics'name='physics' value='0'>
+                    
+                <label for="Chemistry">Chemistry:</label><br>   
+                <input type="text"id='chemistry'name='chemistry' value='0'>
+    
+                <label for="Maths">Maths:</label><br>
+                <input type="text"id='maths'name='maths' value='0'>
+    
+                <label for="Biology">Biology:</label><br>
+                <input type="text"id='biology'name='biology' value='0'>
+    
+                <label for="English">English:</label><br>
+                <input type="text"id='english'name='english' value='0'>
+    
+                <label for="Urdu">Urdu:</label><br>
+                <input type="text"id='urdu'name='urdu' value='0'>
+                
+                <input type="submit" value="submit"><br>
+               
+            
+    
+
+</form>
+<br>
+<br>
+{{percentage}}
+
+<p>this is the example how inputs can be taken from the user through html documents</p>
+
+</body>
+</html>
